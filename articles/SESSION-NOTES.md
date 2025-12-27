@@ -5,11 +5,17 @@
 - [x] 5 skills created and validated
 - [x] GitHub repo: https://github.com/vishalsachdev/learning-design-pillars
 - [x] Article written: `2024-12-27-pdf-to-shareable-skills.md`
+- [x] HTML version: `2024-12-27-pdf-to-shareable-skills.html`
+- [x] Cover images generated:
+  - LinkedIn: `2024-12-27-cover-image.png` (1200x628)
+  - Substack: `2024-12-27-substack-banner.png` (1100x220)
+  - Twitter: `2024-12-27-twitter-card.png` (1200x675)
 
-## Remaining Tasks
-- [ ] Create HTML version of article
-- [ ] Cover images (LinkedIn 1200x628, Substack 1100x220, Twitter 1200x675)
-- [ ] Export session transcript: `uvx claude-code-transcripts local --gist --open`
+## Manual Step Required
+Run this in your terminal to export the session transcript:
+```bash
+uvx claude-code-transcripts local --gist --open
+```
 
 ## Key Links
 - Repo: https://github.com/vishalsachdev/learning-design-pillars

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Shareable Learning Design Skills with Canvas MCP Integration</title>
+    <meta name="description" content="From a PDF of learning science principles to GitHub-ready Claude skills—a story about compounding AI capabilities and using skills to validate skills.">
+    <meta property="og:title" content="Building Shareable Learning Design Skills with Canvas MCP Integration">
+    <meta property="og:description" content="From a PDF of learning science principles to GitHub-ready Claude skills—a story about compounding AI capabilities.">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --bg: #ffffff;
+            --bg-alt: #f9fafb;
+            --border: #e5e7eb;
+            --code-bg: #1e293b;
+            --code-text: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text);
+            background: var(--bg);
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            font-style: italic;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 2rem 0;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            font-weight: 600;
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        code {
+            font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+            font-size: 0.875em;
+            background: var(--bg-alt);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            border: 1px solid var(--border);
+        }
+
+        pre {
+            background: var(--code-bg);
+            color: var(--code-text);
+            padding: 1.25rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            font-size: 0.875rem;
+            line-height: 1.5;
+        }
+
+        pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            color: inherit;
+            font-size: inherit;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1.5rem;
+            font-size: 0.9375rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            font-weight: 600;
+            background: var(--bg-alt);
+        }
+
+        blockquote {
+            border-left: 4px solid var(--primary);
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .equation {
+            background: var(--bg-alt);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-size: 0.9375rem;
+        }
+
+        .equation ul {
+            margin-bottom: 0;
+        }
+
+        .related {
+            background: var(--bg-alt);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2.5rem;
+        }
+
+        .related h4 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+
+        .related ul {
+            margin-bottom: 0;
+        }
+
+        .resources {
+            margin-top: 1.5rem;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .cta a {
+            color: white;
+            font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+
+            h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            pre {
+                font-size: 0.8125rem;
+                padding: 1rem;
+            }
+
+            table {
+                font-size: 0.875rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Building Shareable Learning Design Skills with Canvas MCP Integration</h1>
+
+        <p class="subtitle">From a PDF of learning science principles to GitHub-ready Claude skills—a story about compounding AI capabilities and using skills to validate skills.</p>
+
+        <hr>
+
+        <h2>The Origin</h2>
+
+        <p>It started with <a href="https://www.linkedin.com/posts/activity-7408914018960093185-0mzO">a LinkedIn post</a> about the "Four Learning Design Pillars"—an evidence-based framework synthesizing multimedia learning research, cognitive load theory, and UX best practices into 46 actionable instructional design principles.</p>
+
+        <p>As an educator, I had the PDF in my teaching folder. Useful when I remembered to open it. Not so useful at 11pm when I'm designing a Canvas assignment and wondering if I've forgotten something important.</p>
+
+        <p>My thought: <em>What if these principles could live inside my AI workflow?</em> What if, when creating assignments or auditing courses, Claude could automatically reference these research-backed principles and tell me what's missing?</p>
+
+        <p>Better yet: what if I could share these skills with other educators?</p>
+
+        <h2>The Compounding Skills Insight</h2>
+
+        <p>This project builds on a pattern I've been exploring: <strong>skills that create skills</strong>.</p>
+
+        <p>I already had <code>/skill-creator</code>—a skill that defines best practices for Claude Code skills. I already had <a href="https://github.com/vishalsachdev/canvas-mcp">canvas-mcp</a>—an MCP server with 40+ tools for Canvas LMS. Now I was adding learning design principles that would compound with both.</p>
+
+        <div class="equation">
+            <p>The equation:</p>
+            <ul>
+                <li><strong>Principles</strong> (extracted from PDF) + <strong>Canvas MCP</strong> (LMS integration) + <strong>Skill validation</strong> (quality assurance) = <strong>Shareable educator tools</strong></li>
+            </ul>
+        </div>
+
+        <p>Each capability amplifies the others. That's compound engineering.</p>
+
+        <h2>Extracting Structure from PDF</h2>
+
+        <p>The 12-page PDF contained rich content: 4 pillars, 13 categories, 46 numbered principles (like <code>1.1.1 Small segments</code> or <code>3.2.4 Worked examples</code>), each with research citations.</p>
+
+        <p>Claude Code's first attempt hit the 2.4MB file size limit. We pivoted to Python extraction:</p>
+
+        <pre><code>import fitz  # PyMuPDF
+doc = fitz.open('learning-design-pillars.pdf')
+for page in doc:
+    print(page.get_text())</code></pre>
+
+        <p>But I had already done something useful: created a JSON version with <strong>patterns</strong> and <strong>checks</strong> that the PDF didn't have:</p>
+
+        <pre><code>{
+  "code": "1.1.1",
+  "name": "Small segments",
+  "rule": "Break learning content into small, manageable segments...",
+  "patterns": ["micro-lessons", "chunked pages", "one-concept-per-screen"],
+  "checks": [
+    "Is content chunked into bite-sized units?",
+    "Does each screen/page have a single primary idea?"
+  ]
+}</code></pre>
+
+        <p>The <code>patterns</code> give implementation examples. The <code>checks</code> become verification questions for course audits. This is what makes the principles <em>actionable</em> for AI-assisted design.</p>
+
+        <h2>Two Formats for Educators</h2>
+
+        <p>We created both YAML and JSON, each serving different educator needs:</p>
+
+        <p><strong>YAML</strong> — Extended with Canvas-specific guidance:</p>
+
+        <pre><code>- id: "3.1.6"
+  name: "Low-stakes practice"
+  description: "Provide ungraded practice allowing learners to learn from mistakes..."
+  canvas_application: "Use practice quizzes with unlimited attempts; separate formative from summative"</code></pre>
+
+        <p><strong>JSON</strong> — With patterns and verification checks for audits.</p>
+
+        <p>When you're designing a Canvas assignment and wondering about low-stakes practice, the skill tells you: <em>"Practice quizzes with unlimited attempts."</em> Specific. Actionable. Canvas-native.</p>
+
+        <h2>Five Skills for Educators</h2>
+
+        <p>We built five skills targeting common educator workflows:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>What It Does</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>/learning-design-review</code></td>
+                    <td>Review any content against all 4 pillars with scores and recommendations</td>
+                </tr>
+                <tr>
+                    <td><code>/learning-design-checklist</code></td>
+                    <td>Quick verification checklists by pillar</td>
+                </tr>
+                <tr>
+                    <td><code>/canvas-assignment-design</code></td>
+                    <td>Guided assignment creation with principle-backed decisions</td>
+                </tr>
+                <tr>
+                    <td><code>/canvas-course-audit</code></td>
+                    <td>Comprehensive course evaluation via <a href="https://github.com/vishalsachdev/canvas-mcp">canvas-mcp</a></td>
+                </tr>
+                <tr>
+                    <td><code>/canvas-feedback-template</code></td>
+                    <td>Generate learning science-backed feedback for grading</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>The Canvas skills integrate directly with <a href="https://github.com/vishalsachdev/canvas-mcp">canvas-mcp</a>, fetching real course data to evaluate against principles:</p>
+
+        <pre><code>// The audit skill fetches your actual Canvas data
+modules = await canvas_mcp.list_modules(course_id);
+assignments = await canvas_mcp.list_assignments(course_id);
+
+// Then evaluates against specific principles
+// "Are rubrics attached?" → Principle 1.3.4
+// "Do modules have overview pages?" → Principle 1.3.2</code></pre>
+
+        <h2>Using Skills to Fix Skills</h2>
+
+        <p>Here's where it gets meta—and where compounding really shows.</p>
+
+        <p>I have a <code>/skill-creator</code> skill that defines Claude Code skill best practices. Time to use it on our new skills:</p>
+
+        <pre><code>"Use the skill creator skill to validate things"</code></pre>
+
+        <p>The validation found real problems:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Issue</th>
+                    <th>Impact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Missing YAML frontmatter</td>
+                    <td>Claude wouldn't know when to trigger 2 skills</td>
+                </tr>
+                <tr>
+                    <td>Absolute paths (<code>/Users/vishal/...</code>)</td>
+                    <td>Would break for every other user</td>
+                </tr>
+                <tr>
+                    <td>456-line file</td>
+                    <td>Exceeds recommended 500-line limit</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p><strong>Without validation, I would have shipped broken skills.</strong></p>
+
+        <p>The fixes applied themselves through the same AI workflow:</p>
+
+        <p>1. <strong>Added frontmatter</strong> with proper trigger descriptions:</p>
+
+        <pre><code>---
+name: canvas-course-audit
+description: Audit a Canvas LMS course against the Four Learning Design Pillars.
+  Use when educators want to evaluate course quality or prepare for redesign.
+  Requires canvas-mcp server.
+---</code></pre>
+
+        <p>2. <strong>Converted paths</strong> to portable references:</p>
+
+        <pre><code>Read from `{SKILL_DIR}/../principles/learning-design-pillars.yaml`</code></pre>
+
+        <p>3. <strong>Applied progressive disclosure</strong> — moved 90 lines of detailed audit tables to <code>references/audit-criteria.md</code>. The main skill stays lean; detailed tables load only when performing an actual audit.</p>
+
+        <p>Post-validation, all 5 skills passed:</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Lines</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>learning-design-review</td>
+                    <td>226</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <td>learning-design-checklist</td>
+                    <td>204</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <td>canvas-assignment-design</td>
+                    <td>445</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <td>canvas-course-audit</td>
+                    <td>374</td>
+                    <td>&#10003;</td>
+                </tr>
+                <tr>
+                    <td>canvas-feedback-template</td>
+                    <td>186</td>
+                    <td>&#10003;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>This is the compounding pattern: <strong>skill-creator</strong> (built months ago) validates <strong>learning-design skills</strong> (built today), which integrate with <strong>canvas-mcp</strong> (built last year). Each tool makes the others more powerful.</p>
+
+        <h2>What Educators Actually Get</h2>
+
+        <p>Let's be concrete about the value for educators:</p>
+
+        <p><strong><code>/learning-design-review</code></strong> — Paste your syllabus, assignment description, or course outline. Get:</p>
+        <ul>
+            <li>Scores for each pillar (1-5 scale)</li>
+            <li>Strengths: "Clear learning objectives at module start (1.3.1)"</li>
+            <li>Gaps: "No time estimates provided (4.3.2)"</li>
+            <li>Priority recommendations ranked by effort</li>
+        </ul>
+
+        <p><strong><code>/canvas-course-audit BADM_350</code></strong> — Point it at your Canvas course. It:</p>
+        <ul>
+            <li>Fetches your modules, assignments, discussions via <a href="https://github.com/vishalsachdev/canvas-mcp">canvas-mcp</a></li>
+            <li>Evaluates 50+ criteria with Canvas-specific checks</li>
+            <li>Generates report with Quick Wins (&lt;1 hour) vs. Major Redesigns</li>
+        </ul>
+
+        <p><strong><code>/canvas-assignment-design "case study analysis"</code></strong> — Creates assignments with:</p>
+        <ul>
+            <li>Learning objectives using action verbs</li>
+            <li>Scenario framing (Principle 2.3.4 Storytelling)</li>
+            <li>Time estimates (Principle 4.3.2)</li>
+            <li>Rubric criteria aligned to objectives</li>
+            <li>Optional direct creation in Canvas</li>
+        </ul>
+
+        <p><strong><code>/canvas-feedback-template --rubric</code></strong> — Generates feedback that's:</p>
+        <ul>
+            <li>Targeted: specific to what the student did (3.2.1)</li>
+            <li>Encouraging: leads with strengths (3.2.2)</li>
+            <li>Actionable: concrete next steps</li>
+            <li>Ready for SpeedGrader comment library</li>
+        </ul>
+
+        <h2>From Local to Shareable</h2>
+
+        <p>With validation passing, shipping to GitHub was one command:</p>
+
+        <pre><code>gh repo create learning-design-pillars --public \
+  --description "Claude skills for evidence-based learning design with Canvas integration" \
+  --source=. --push</code></pre>
+
+        <div class="cta">
+            <p><strong>The repo is live:</strong> <a href="https://github.com/vishalsachdev/learning-design-pillars">github.com/vishalsachdev/learning-design-pillars</a></p>
+        </div>
+
+        <p>For any educator to use:</p>
+
+        <pre><code>git clone https://github.com/vishalsachdev/learning-design-pillars.git \
+  ~/.claude/skills/learning-design-pillars</code></pre>
+
+        <p>Then: <code>/learning-design-review</code>, <code>/canvas-course-audit COURSE_ID</code>, etc.</p>
+
+        <h2>The Reusable Pattern</h2>
+
+        <p>This session demonstrated a workflow any educator (or domain expert) can follow:</p>
+
+        <ol>
+            <li><strong>Source material</strong> → PDF, documentation, expertise in static formats</li>
+            <li><strong>Extract structure</strong> → JSON/YAML with actionable fields (patterns, checks, applications)</li>
+            <li><strong>Create skills</strong> → Package into Claude skills with proper triggers</li>
+            <li><strong>Validate with existing skills</strong> → Use skill-creator to catch issues before sharing</li>
+            <li><strong>Integrate with MCP servers</strong> → Connect to real tools (Canvas, databases, APIs)</li>
+            <li><strong>Share on GitHub</strong> → Let the community use and improve</li>
+        </ol>
+
+        <p>The same pattern works for: rubric standards, accessibility guidelines, institutional policies, discipline-specific frameworks.</p>
+
+        <h2>What's Next</h2>
+
+        <p>The principles are extracted. The skills are validated. The repo is public.</p>
+
+        <p>Now comes real usage. Every assignment I design this semester runs through <code>/canvas-assignment-design</code>. Every course audit uses the integrated workflow. The skills will evolve based on what actually helps in practice.</p>
+
+        <p>If you're an educator using Canvas—or interested in evidence-based learning design—the skills are ready:</p>
+
+        <div class="cta">
+            <p><a href="https://github.com/vishalsachdev/learning-design-pillars">github.com/vishalsachdev/learning-design-pillars</a></p>
+            <p>Clone, customize, contribute. That's the power of shareable, compounding skills.</p>
+        </div>
+
+        <hr>
+
+        <div class="related">
+            <h4>Related reading:</h4>
+            <ul>
+                <li><a href="https://chatwithgpt.substack.com/p/skills-creating-skills-when-ai-becomes">Skills Creating Skills: When AI Becomes Your Knowledge Architect</a></li>
+                <li><a href="https://chatwithgpt.substack.com/p/three-months-of-canvas-mcp-evolution">Three Months of Canvas MCP Evolution</a></li>
+                <li><a href="https://chatwithgpt.substack.com/p/teaching-database-management-in-the">Teaching Database Management in the Age of AI Assistants</a></li>
+            </ul>
+        </div>
+
+        <div class="resources">
+            <h4>Resources:</h4>
+            <ul>
+                <li><a href="https://github.com/vishalsachdev/canvas-mcp">canvas-mcp</a> — Canvas LMS MCP server (40+ tools)</li>
+                <li><a href="https://github.com/vishalsachdev/learning-design-pillars">learning-design-pillars</a> — The skills from this article</li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>
