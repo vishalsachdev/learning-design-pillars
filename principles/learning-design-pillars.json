@@ -1,0 +1,294 @@
+{
+  "knowledge_base": {
+    "title": "Four Learning Design Pillars",
+    "source": {
+      "type": "pdf",
+      "name": "learning-design-pillars.pdf"
+    },
+    "entities": {
+      "pillars": [
+        {
+          "id": "P1",
+          "name": "Clear, Purposeful Structure",
+          "goal": "Reduce cognitive load by organizing content from simple to complex and chunking information step-by-step.",
+          "dimensions": [
+            {
+              "id": "1.1",
+              "name": "Content Organization",
+              "principles": [
+                {
+                  "code": "1.1.1",
+                  "name": "Small segments",
+                  "rule": "Break learning content into small, manageable segments to support step-by-step processing.",
+                  "patterns": ["micro-lessons", "chunked pages", "one-concept-per-screen"],
+                  "checks": [
+                    "Is content chunked into bite-sized units?",
+                    "Does each screen/page have a single primary idea?"
+                  ]
+                },
+                {
+                  "code": "1.1.2",
+                  "name": "Self-contained segments",
+                  "rule": "Design units/modules to stand alone meaningfully with minimal dependency on other content.",
+                  "patterns": ["recap prerequisites inline", "local definitions/glossary on the page"],
+                  "checks": [
+                    "Can a learner understand the segment without hunting elsewhere?",
+                    "Are prerequisites stated or embedded?"
+                  ]
+                },
+                {
+                  "code": "1.1.3",
+                  "name": "Logical sequencing",
+                  "rule": "Present ideas in a logical progression that builds from basic concepts to advanced ones.",
+                  "patterns": ["concept ladder", "scaffolded progression", "simple→complex ordering"],
+                  "checks": [
+                    "Do later concepts require earlier ones that are already taught?",
+                    "Is complexity increasing gradually?"
+                  ]
+                },
+                {
+                  "code": "1.1.4",
+                  "name": "Hierarchical page layouts",
+                  "rule": "Make content hierarchy obvious through heading styles/sizes, prominent placement of key info, and whitespace.",
+                  "patterns": ["consistent heading scale", "summary boxes", "layout hierarchy"],
+                  "checks": ["Can a learner scan and instantly see structure and priority?"]
+                },
+                {
+                  "code": "1.1.5",
+                  "name": "Structural cues",
+                  "rule": "Use labels, intros, headings, and signaling to show what matters and why.",
+                  "patterns": ["learning goals callouts", "signposts like 'Key idea'", "section previews"],
+                  "checks": ["Are learners guided on what to focus on and why?"]
+                }
+              ]
+            },
+            {
+              "id": "1.2",
+              "name": "Design Consistency",
+              "principles": [
+                {
+                  "code": "1.2.1",
+                  "name": "Standardized features",
+                  "rule": "Use consistent palettes, fonts, layouts, and standardized UI conventions.",
+                  "patterns": ["component library", "template-driven lessons"],
+                  "checks": ["Do screens behave consistently across the course?"]
+                },
+                {
+                  "code": "1.2.2",
+                  "name": "Integrated format",
+                  "rule": "Keep instruction, practice, assessment, and resources in one integrated channel to reduce toggling load.",
+                  "patterns": ["inline practice", "embedded resources", "single-flow lessons"],
+                  "checks": ["Are learners forced to jump between tools/screens unnecessarily?"]
+                },
+                {
+                  "code": "1.2.3",
+                  "name": "Program continuity",
+                  "rule": "Ensure concept and skill development continues coherently across stages of a program.",
+                  "patterns": ["spiral curriculum mapping", "capstone alignment"],
+                  "checks": ["Do later modules build on earlier ones with consistent expectations?"]
+                }
+              ]
+            },
+            {
+              "id": "1.3",
+              "name": "Learning Path Clarity",
+              "principles": [
+                {
+                  "code": "1.3.1",
+                  "name": "Clear, measurable learning objectives",
+                  "rule": "Make objectives visible, clear, and measurable.",
+                  "patterns": ["objective-first lesson headers", "measurable verbs"],
+                  "checks": ["Can a learner tell what success looks like?"]
+                },
+                {
+                  "code": "1.3.2",
+                  "name": "Openers and closers",
+                  "rule": "Start units with an orienting opener and end with a summary to reinforce consolidation.",
+                  "patterns": ["preview→teach→recap", "end-of-lesson takeaway"],
+                  "checks": ["Does every unit begin with orientation and end with consolidation?"]
+                },
+                {
+                  "code": "1.3.3",
+                  "name": "Lesson alignment",
+                  "rule": "Align instruction, practice, and assessments to the objectives.",
+                  "patterns": ["objective→activity mapping", "assessment blueprint"],
+                  "checks": ["Is every activity clearly tied to an objective?"]
+                },
+                {
+                  "code": "1.3.4",
+                  "name": "Expectation setting",
+                  "rule": "Explain how completion is recognized and what is expected.",
+                  "patterns": ["rubrics", "completion criteria", "grading transparency"],
+                  "checks": ["Are expectations explicit (time, quality, grading, outcomes)?"]
+                },
+                {
+                  "code": "1.3.5",
+                  "name": "Course introductions",
+                  "rule": "Provide overview: description, structure, policies, and prerequisites.",
+                  "patterns": ["course map", "orientation module"],
+                  "checks": ["Are prerequisites and structure clearly communicated?"]
+                }
+              ]
+            },
+            {
+              "id": "1.4",
+              "name": "Adaptive Learning Design",
+              "principles": [
+                {
+                  "code": "1.4.1",
+                  "name": "Spaced exposure over time",
+                  "rule": "Revisit key concepts after weeks/months to strengthen retention.",
+                  "patterns": ["spiral review", "scheduled refreshers"],
+                  "checks": ["Is there planned re-exposure later in the program?"]
+                },
+                {
+                  "code": "1.4.2",
+                  "name": "Learner control",
+                  "rule": "Let learners choose order/pace and provide shortcuts for experienced users.",
+                  "patterns": ["optional pathways", "diagnostic skip-ahead"],
+                  "checks": ["Can experienced learners move faster without losing coherence?"]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P2",
+          "name": "Active, Engaging Learning Content",
+          "goal": "Use multimedia + meaningful activities so learners think, respond, and apply knowledge (not just read).",
+          "dimensions": [
+            {
+              "id": "2.1",
+              "name": "Content Design & Presentation",
+              "principles": [
+                { "code": "2.1.1", "name": "Streamlined content", "rule": "Succinct, uncluttered content focused on objectives." },
+                { "code": "2.1.2", "name": "Visual content", "rule": "Use visual + verbal (purposeful multimedia), not text-only." },
+                { "code": "2.1.3", "name": "Minimal decorative graphics", "rule": "Avoid purely decorative images; keep graphics relevant." },
+                { "code": "2.1.4", "name": "Closely placed text and graphics", "rule": "Place related text and visuals near each other." },
+                { "code": "2.1.5", "name": "Scannable text", "rule": "Use short paragraphs, headings, lists, and visual breaks." },
+                { "code": "2.1.6", "name": "Progressive disclosures", "rule": "Layer information; reveal details on demand (e.g., accordions)." },
+                { "code": "2.1.7", "name": "Direct access", "rule": "Provide in-page links/accordions to jump to what’s relevant." },
+                { "code": "2.1.8", "name": "Legibility and audibility", "rule": "Readable fonts; audio must be clearly audible." }
+              ]
+            },
+            {
+              "id": "2.2",
+              "name": "Multimedia & Interactive Elements",
+              "principles": [
+                { "code": "2.2.1", "name": "Multimedia-rich content", "rule": "Use video/animations/interactives/audio to increase appeal and learning." },
+                { "code": "2.2.2", "name": "Activity-based content", "rule": "Prioritize doing and meaningful interaction over long passive text." },
+                { "code": "2.2.3", "name": "Short videos", "rule": "Keep videos under ~10 minutes; segment longer videos." },
+                { "code": "2.2.4", "name": "Video narration", "rule": "Use narration to explain visuals instead of relying on text." },
+                { "code": "2.2.5", "name": "On-screen text in videos", "rule": "Use text sparingly; avoid repeating narration verbatim." },
+                { "code": "2.2.6", "name": "Audio-visual synchronization", "rule": "Present corresponding audio and visuals simultaneously." }
+              ]
+            },
+            {
+              "id": "2.3",
+              "name": "Engagement & Relevance",
+              "principles": [
+                { "code": "2.3.1", "name": "Social presence", "rule": "Use friendly, conversational language and narration." },
+                { "code": "2.3.2", "name": "Explaining features", "rule": "Explain how tools/features support objectives and benefit learners." },
+                { "code": "2.3.3", "name": "Activating prior knowledge", "rule": "Start with questions/scenarios that connect to learner experience." },
+                { "code": "2.3.4", "name": "Storytelling", "rule": "Use narrative elements (characters, conflict, arcs) when useful." },
+                { "code": "2.3.5", "name": "Concreteness fading", "rule": "Start with concrete examples, then move to abstraction." },
+                { "code": "2.3.6", "name": "Appropriate leveling", "rule": "Aim for intermediate difficulty: neither trivial nor overwhelming." },
+                { "code": "2.3.7", "name": "Interest and relevance", "rule": "Use relevant, interesting examples tied to learner context." },
+                { "code": "2.3.8a", "name": "Key terms", "rule": "Highlight/define key concepts and glossary terms aligned to objectives." },
+                { "code": "2.3.8b", "name": "Varied examples and perspectives", "rule": "Provide multiple contexts and perspectives; compare similarities/differences." }
+              ]
+            },
+            {
+              "id": "2.4",
+              "name": "Quality and Accessibility",
+              "principles": [
+                { "code": "2.4.1", "name": "Additional resources", "rule": "Provide supplementary resources (guides, links, etc.)." },
+                { "code": "2.4.2", "name": "Currency and accuracy", "rule": "Ensure content is current, accurate, and properly sourced." },
+                { "code": "2.4.3", "name": "Inclusivity", "rule": "Avoid bias, stereotyping, and discrimination." },
+                { "code": "2.4.4", "name": "Conveying credibility", "rule": "Show credibility indicators: author credentials, dates, reputable sources." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P3",
+          "name": "Continuous Practice & Feedback",
+          "goal": "Strengthen memory and understanding via varied practice and immediate, useful feedback.",
+          "dimensions": [
+            {
+              "id": "3.1",
+              "name": "Practice Design & Variety",
+              "principles": [
+                { "code": "3.1.1", "name": "Varied practice", "rule": "Use varied instances/contexts for the same skill." },
+                { "code": "3.1.2", "name": "Interleaving practice", "rule": "Mix related skills/concepts rather than blocking one at a time." },
+                { "code": "3.1.3", "name": "Spaced practice", "rule": "Cycle back to the same skills over extended time." },
+                { "code": "3.1.4", "name": "Effortful practice", "rule": "Use recall-heavy prompts (short answer, fill-in) when appropriate." },
+                { "code": "3.1.5", "name": "Authentic practice", "rule": "Reflect real-world contexts learners will face." },
+                { "code": "3.1.6", "name": "Low-stakes practice", "rule": "Provide ungraded practice to learn from mistakes." },
+                { "code": "3.1.7", "name": "Practicing prior skills", "rule": "Warm up key prerequisites before introducing new topics." }
+              ]
+            },
+            {
+              "id": "3.2",
+              "name": "Feedback & Assessment",
+              "principles": [
+                { "code": "3.2.1", "name": "Targeted feedback", "rule": "Specific, goal-oriented feedback with actionable next steps." },
+                { "code": "3.2.2", "name": "Encouraging feedback", "rule": "Positive tone; celebrate progress; reduce threat." },
+                { "code": "3.2.3", "name": "Immediate feedback", "rule": "Deliver feedback right after submission." },
+                { "code": "3.2.4", "name": "Worked examples", "rule": "Provide worked examples then fade to partial and independent solving." },
+                { "code": "3.2.5", "name": "Clear instructions", "rule": "Rubrics + clear expectations for activities/assessments." }
+              ]
+            },
+            {
+              "id": "3.3",
+              "name": "Metacognition & Deep Learning",
+              "principles": [
+                { "code": "3.3.1", "name": "Self-assessing progress", "rule": "Help learners accurately judge progress and plan study time." },
+                { "code": "3.3.2", "name": "Generating explanations", "rule": "Ask why/how/what-if to elicit higher-order thinking." },
+                { "code": "3.3.3", "name": "Reflection", "rule": "Prompt reflection on what/how they learned." },
+                { "code": "3.3.4", "name": "Social learning", "rule": "Enable collaboration and discussion when appropriate." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "P4",
+          "name": "Simple, Intuitive User Experience",
+          "goal": "Reduce friction so learners spend cognitive energy on learning, not navigation.",
+          "dimensions": [
+            {
+              "id": "4.1",
+              "name": "Navigation & Orientation",
+              "principles": [
+                { "code": "4.1.1", "name": "Intuitive navigation", "rule": "Minimize wasted effort with clear navigation." },
+                { "code": "4.1.2", "name": "Progress and location indicators", "rule": "Show learner location/progress to aid motivation and time management." },
+                { "code": "4.1.3", "name": "Differentiate static vs. interactive", "rule": "Make clickable/interactive elements clearly recognizable." },
+                { "code": "4.1.4", "name": "Closed learning system", "rule": "Keep experience self-contained; clearly label external links." },
+                { "code": "4.1.5", "name": "Resume where you left off", "rule": "Support returning learners in finding their place quickly." }
+              ]
+            },
+            {
+              "id": "4.2",
+              "name": "Accessibility & Optimization",
+              "principles": [
+                { "code": "4.2.1", "name": "Simple and advanced search", "rule": "Support finding specifics within lessons." },
+                { "code": "4.2.2", "name": "Note-taking and highlighting", "rule": "Provide annotation tools." },
+                { "code": "4.2.3", "name": "Viewability on different screen sizes", "rule": "Responsive design; reflowable text; zoomable graphics." },
+                { "code": "4.2.4", "name": "Customizing display preferences", "rule": "Allow font/size/background customization." },
+                { "code": "4.2.5", "name": "Minimalist design", "rule": "Prioritize clarity and simplicity in UX/UI." }
+              ]
+            },
+            {
+              "id": "4.3",
+              "name": "Media Control & Time",
+              "principles": [
+                { "code": "4.3.1", "name": "Controlling the pace of videos", "rule": "Give controls to replay/speed/slow/skip." },
+                { "code": "4.3.2", "name": "Time estimates", "rule": "Provide time estimates and timestamps for media." }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

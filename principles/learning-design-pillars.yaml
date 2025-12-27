@@ -1,0 +1,519 @@
+# Four Learning Design Pillars
+# Evidence-based principles for effective instructional design
+# Source: Synthesis of multimedia learning research, cognitive load theory, and UX best practices
+
+version: "1.0"
+last_updated: "2024-12-27"
+
+pillars:
+  - id: 1
+    name: "Clear, Purposeful Structure"
+    description: "Organize content from simple to complex and break information into bite-sized chunks to reduce cognitive load and help learners process ideas step-by-step."
+    categories:
+      - id: "1.1"
+        name: "Content Organization"
+        principles:
+          - id: "1.1.1"
+            name: "Small segments"
+            description: "Break learning content into small, manageable segments that allow learners to process information step-by-step."
+            research_basis: "segmenting principle"
+            references: [4, 5, 9]
+            canvas_application: "Break assignments into multiple smaller submissions; use modules with clear boundaries"
+
+          - id: "1.1.2"
+            name: "Self-contained segments"
+            description: "Design learning units and modules to be self-contained. Ensure that each segment can stand alone meaningfully, with minimal dependencies on other content."
+            references: [20]
+            canvas_application: "Each Canvas module should be completable independently when possible"
+
+          - id: "1.1.3"
+            name: "Logical sequencing"
+            description: "Organize information in a clear hierarchical framework, presenting ideas in a logical progression that builds on itself. Start with basic concepts before moving to advanced ones."
+            references: [4, 5, 6, 10]
+            canvas_application: "Use prerequisite settings; order modules from foundational to advanced"
+
+          - id: "1.1.4"
+            name: "Hierarchical page layouts"
+            description: "Place important information in prominent positions in page layouts. Clearly indicate content hierarchy through heading styles and sizes. Use white space around content."
+            references: [4]
+            canvas_application: "Use H1/H2/H3 hierarchy in Canvas pages; leverage the Rich Content Editor formatting"
+
+          - id: "1.1.5"
+            name: "Structural cues"
+            description: "Include cues to highlight content organization and structure. Use headings, introductions, and clear labels to signal what learners should focus on and why."
+            research_basis: "signaling principle"
+            references: [4, 5, 9]
+            canvas_application: "Add clear section headers; use Canvas labels and color coding"
+
+      - id: "1.2"
+        name: "Design Consistency"
+        principles:
+          - id: "1.2.1"
+            name: "Standardized features"
+            description: "Develop consistent color palettes, fonts, and layout styles. Standardize features so learners can learn conventions and follow industry conventions."
+            references: [4, 5, 10, 14, 20]
+            canvas_application: "Create module templates; use consistent naming conventions across assignments"
+
+          - id: "1.2.2"
+            name: "Integrated format"
+            description: "Present related instructional content, assessments, practice, and resources in an integrated format within a single channel to reduce cognitive load from toggling between screens."
+            research_basis: "contiguity principle"
+            references: [9]
+            canvas_application: "Embed resources directly in assignment descriptions; use Canvas pages to integrate content"
+
+          - id: "1.2.3"
+            name: "Program continuity"
+            description: "Ensure continuity in concept and skill development across learning stages in a program."
+            references: [5]
+            canvas_application: "Reference prior modules; build explicit connections between assignments"
+
+      - id: "1.3"
+        name: "Learning Path Clarity"
+        principles:
+          - id: "1.3.1"
+            name: "Clear, measurable learning objectives"
+            description: "Make learning objectives visible to learners, clearly stated, and measurable."
+            references: [1, 10, 20]
+            canvas_application: "Add learning objectives to module descriptions and assignment headers"
+
+          - id: "1.3.2"
+            name: "Openers and closers"
+            description: "Begin each unit with an opener that orients learners and connects to previous topics. Conclude with a summary that reinforces key points and helps learners consolidate understanding."
+            references: [5, 20]
+            canvas_application: "Create 'Module Overview' and 'Module Summary' pages"
+
+          - id: "1.3.3"
+            name: "Lesson alignment"
+            description: "Align instructional strategies, content, practice, and assessments with learning objectives. Ensure they work together to support learners in achieving desired outcomes effectively."
+            references: [4, 5, 20]
+            canvas_application: "Map each assessment to specific learning objectives; ensure rubric criteria match objectives"
+
+          - id: "1.3.4"
+            name: "Expectation setting"
+            description: "Specify how successful course completion will be recognized. Ensure learners understand expectations."
+            references: [4, 8]
+            canvas_application: "Clear rubrics; explicit grading criteria; sample submissions"
+
+          - id: "1.3.5"
+            name: "Course introductions"
+            description: "Provide a comprehensive course overview that includes a brief description, organizational structure, and course policies. Clearly communicate any prerequisite knowledge or competencies required."
+            references: [4, 5, 10]
+            canvas_application: "Complete syllabus page; welcome module with course navigation guide"
+
+      - id: "1.4"
+        name: "Adaptive Learning Design"
+        principles:
+          - id: "1.4.1"
+            name: "Spaced exposure over time"
+            description: "Design learning that exposes learners to key concepts multiple times over an extended period. Introduce ideas, then strategically revisit them after several weeks or months have passed."
+            references: [13]
+            canvas_application: "Reference prior concepts in later assignments; cumulative assessments"
+
+          - id: "1.4.2"
+            name: "Learner control"
+            description: "Allow learners to decide what content to access, in what order, and at what pace. Provide shortcuts for experienced users."
+            references: [1, 4, 10, 20]
+            canvas_application: "Avoid strict sequential requirements unless pedagogically necessary; provide optional resources"
+
+  - id: 2
+    name: "Active, Engaging Learning Content"
+    description: "Design interactive content with multimedia elements and meaningful activities that require learners to think, respond, and apply knowledge rather than passively reading."
+    categories:
+      - id: "2.1"
+        name: "Content Design & Presentation"
+        principles:
+          - id: "2.1.1"
+            name: "Streamlined content"
+            description: "Present learning content that is succinct, uncluttered, and focused on supporting learning objectives. Write text blocks in a compact, minimalist style."
+            research_basis: "coherence principle"
+            references: [9, 20]
+            canvas_application: "Keep Canvas pages focused; avoid information overload in assignment descriptions"
+
+          - id: "2.1.2"
+            name: "Visual content"
+            description: "Present content using both visual and verbal mediums, rather than just text alone. Ensure included graphics are relevant and purposeful."
+            research_basis: "multimedia principle"
+            references: [5, 9, 13, 20]
+            canvas_application: "Include diagrams, infographics, and visual organizers in Canvas pages"
+
+          - id: "2.1.3"
+            name: "Minimal decorative graphics"
+            description: "Limit purely decorative images, especially on mobile devices, focusing on graphics that are relevant and purposeful."
+            references: [9, 20]
+            canvas_application: "Every image should support learning; avoid stock photos that don't add meaning"
+
+          - id: "2.1.4"
+            name: "Closely placed text and graphics"
+            description: "Position related text and graphics, such as a photo and its corresponding caption, in close proximity on the page or screen."
+            research_basis: "contiguity principle"
+            references: [9]
+            canvas_application: "Place explanatory text directly adjacent to related images in Canvas pages"
+
+          - id: "2.1.5"
+            name: "Scannable text"
+            description: "Optimize lesson text for scannability by using short paragraphs, lists, headings, images, and multimedia to visually break up passages."
+            references: [9]
+            canvas_application: "Use bullet points, numbered lists, and clear headings in all Canvas content"
+
+          - id: "2.1.6"
+            name: "Progressive disclosures"
+            description: "Layer content, initially showing only essential information. Allow users to access additional details upon request, using techniques like accordions."
+            references: [12]
+            canvas_application: "Use Canvas's accordion feature or collapsible sections for supplementary details"
+
+          - id: "2.1.7"
+            name: "Direct access"
+            description: "Provide in-page links or accordions to allow users to skip irrelevant sections and jump directly to content of interest. This approach benefits users searching for specific information."
+            references: [2]
+            canvas_application: "Add jump links within long Canvas pages; use clear section anchors"
+
+          - id: "2.1.8"
+            name: "Legibility and audibility"
+            description: "Use clear, easy-to-read fonts and ensure any audio is audible."
+            references: [4, 20]
+            canvas_application: "Use Canvas's default fonts; ensure embedded media has proper audio levels"
+
+      - id: "2.2"
+        name: "Multimedia & Interactive Elements"
+        principles:
+          - id: "2.2.1"
+            name: "Multimedia-rich content"
+            description: "Incorporate videos, animations, interactives, and audio to capitalize on learners' positive perceptions of multimedia and its inherent appeal."
+            references: [4, 10]
+            canvas_application: "Embed videos, use Canvas Studio, include interactive H5P elements"
+
+          - id: "2.2.2"
+            name: "Activity-based content"
+            description: "Incorporate activities and interactive multimedia that actively engage learners through meaningful interactions. Prioritize active participation and 'doing' over passive consumption of long text sections."
+            references: [4]
+            canvas_application: "Use discussions, peer reviews, collaborative assignments over reading-only modules"
+
+          - id: "2.2.3"
+            name: "Short videos"
+            description: "Keep videos under 10 minutes, adjusting length based on content complexity. Break up videos exceeding five minutes into shorter segments."
+            research_basis: "segmenting principle"
+            references: [4, 9]
+            canvas_application: "Segment longer lectures into topic-focused chunks; use Canvas Studio chapters"
+
+          - id: "2.2.4"
+            name: "Video narration"
+            description: "Use audio narration to explain related visuals in videos instead of relying on on-screen text."
+            research_basis: "modality principle"
+            references: [4, 9, 13]
+            canvas_application: "Voice-over videos rather than text-heavy slides"
+
+          - id: "2.2.5"
+            name: "On-screen text in videos"
+            description: "Use on-screen text sparingly in videos to emphasize key points without verbatim repetition of audio narration."
+            research_basis: "redundancy principle"
+            references: [9]
+            canvas_application: "Highlight only key terms on screen; avoid full sentence captions that duplicate audio"
+
+          - id: "2.2.6"
+            name: "Audio-visual synchronization"
+            description: "Present corresponding audio and visuals simultaneously in videos rather than sequentially."
+            research_basis: "temporal contiguity principle"
+            references: [4, 9, 13]
+            canvas_application: "Sync narration with visual demonstrations; avoid 'now I'll show you...' followed by visual"
+
+      - id: "2.3"
+        name: "Engagement & Relevance"
+        principles:
+          - id: "2.3.1"
+            name: "Social presence"
+            description: "Employ a friendly, conversational style in text and narration, using language that feels authentic and relatable."
+            research_basis: "personalization principle"
+            references: [4, 9]
+            canvas_application: "Write in first/second person; use instructor video introductions"
+
+          - id: "2.3.2"
+            name: "Explaining features"
+            description: "Clarify how specific features, tools, or components support learning objectives. Provide information that helps learners understand the benefits of using these elements."
+            references: [9]
+            canvas_application: "Explain why each activity exists; connect assessments to real-world application"
+
+          - id: "2.3.3"
+            name: "Activating prior knowledge"
+            description: "Begin lessons with questions, scenarios, or relatable situations that leverage learners' prior knowledge and experiences."
+            research_basis: "prior knowledge principle"
+            references: [6, 8, 13]
+            canvas_application: "Start modules with reflection questions; reference students' existing expertise"
+
+          - id: "2.3.4"
+            name: "Storytelling"
+            description: "Use storytelling elements like characters, conflict, and narrative arcs to tap into learners' natural affinity for stories."
+            references: [4, 6]
+            canvas_application: "Frame case studies as stories; use scenario-based assignments"
+
+          - id: "2.3.5"
+            name: "Concreteness fading"
+            description: "Begin lessons with specific examples and gradually introduce abstract representations, connecting them to the concrete examples by highlighting relevant features."
+            references: [13]
+            canvas_application: "Start with real examples before introducing theories; build from specific to general"
+
+          - id: "2.3.6"
+            name: "Appropriate leveling"
+            description: "Ensure content difficulty aligns with curriculum requirements and learners' knowledge and abilities. Aim for an intermediate difficulty that is neither too simple nor too challenging."
+            references: [5, 8, 10, 20]
+            canvas_application: "Calibrate difficulty based on course level; provide scaffolding for challenging concepts"
+
+          - id: "2.3.7"
+            name: "Interest and relevance"
+            description: "Use examples and illustrations that are interesting and relevant to learners."
+            references: [5, 8, 10, 20]
+            canvas_application: "Connect content to students' careers, current events, or personal interests"
+
+          - id: "2.3.8"
+            name: "Key terms"
+            description: "Highlight and define key words, concepts, and glossary terms aligned with curriculum aims and objectives."
+            references: [5, 19]
+            canvas_application: "Bold key terms; create a course glossary page; define terms on first use"
+
+          - id: "2.3.9"
+            name: "Varied examples and perspectives"
+            description: "Offer multiple varied examples, contexts, and perspectives, pointing out similarities and differences."
+            references: [5, 8]
+            canvas_application: "Include diverse case studies; show multiple solution approaches"
+
+      - id: "2.4"
+        name: "Quality and Accessibility"
+        principles:
+          - id: "2.4.1"
+            name: "Additional resources"
+            description: "Allow learners to access supplementary resources like pronunciation guides and related content links."
+            references: [5, 20]
+            canvas_application: "Create 'Additional Resources' sections; link to external references"
+
+          - id: "2.4.2"
+            name: "Currency and accuracy"
+            description: "Ensure content is current, accurate, and properly sourced, with no inaccuracies."
+            references: [4, 5, 6, 10, 20]
+            canvas_application: "Update content annually; include publication dates on resources"
+
+          - id: "2.4.3"
+            name: "Inclusivity"
+            description: "Ensure content is free from bias, stereotyping, and discrimination."
+            references: [5]
+            canvas_application: "Use diverse examples; review content for inclusive language"
+
+          - id: "2.4.4"
+            name: "Conveying credibility"
+            description: "Clearly communicate the source and reliability of information presented. Include indicators of credibility such as author credentials, publication dates, and references to reputable sources to build trust with learners."
+            references: [9]
+            canvas_application: "Cite sources; include author credentials for guest content"
+
+  - id: 3
+    name: "Continuous Practice & Feedback"
+    description: "Build in regular practice with varied question types and immediate feedback to strengthen memory, help learners spot gaps, and deepen understanding."
+    categories:
+      - id: "3.1"
+        name: "Practice Design & Variety"
+        principles:
+          - id: "3.1.1"
+            name: "Varied practice"
+            description: "Offer practice with different instances, contexts, and scenarios for the same skills."
+            references: [4, 8]
+            canvas_application: "Use question banks for quizzes; vary assignment formats across the course"
+
+          - id: "3.1.2"
+            name: "Interleaving practice"
+            description: "Mix related skills and concepts in practice sessions instead of focusing on one at a time."
+            references: [9]
+            canvas_application: "Include mixed-topic quizzes; cumulative assignments"
+
+          - id: "3.1.3"
+            name: "Spaced practice"
+            description: "Provide practice that cycles back to the same skills or concepts multiple times over an extended period."
+            references: [13]
+            canvas_application: "Revisit key concepts in later modules; cumulative final exams"
+
+          - id: "3.1.4"
+            name: "Effortful practice"
+            description: "Use practice questions that require learners to actively recall information, such as fill-in-the-blank or short-answer formats."
+            references: [5, 13]
+            canvas_application: "Prefer open-ended questions over recognition-based multiple choice"
+
+          - id: "3.1.5"
+            name: "Authentic practice"
+            description: "Create practice reflecting real-world contexts and challenges relevant to learners' future professions."
+            references: [8, 20]
+            canvas_application: "Design assignments based on real workplace scenarios; use industry-standard tools"
+
+          - id: "3.1.6"
+            name: "Low-stakes practice"
+            description: "Provide ungraded practice allowing learners to learn from mistakes without grade consequences."
+            references: [9]
+            canvas_application: "Use practice quizzes with unlimited attempts; separate formative from summative assessments"
+
+          - id: "3.1.7"
+            name: "Practicing prior skills"
+            description: "Have students practice key prior skills before introducing new topics, using pre-questions to prepare them for upcoming content."
+            references: [8, 9, 13]
+            canvas_application: "Include prerequisite review activities; pre-assessment quizzes"
+
+      - id: "3.2"
+        name: "Feedback & Assessment"
+        principles:
+          - id: "3.2.1"
+            name: "Targeted feedback"
+            description: "Offer specific, goal-oriented feedback focused on actions learners can take to improve performance."
+            references: [4, 10, 14, 17, 20]
+            canvas_application: "Use rubric-based feedback; provide specific improvement suggestions"
+
+          - id: "3.2.2"
+            name: "Encouraging feedback"
+            description: "Provide feedback in an encouraging manner and tone, celebrating progress and invoking positive emotions."
+            references: [4, 6, 17]
+            canvas_application: "Acknowledge what's working well before suggesting improvements"
+
+          - id: "3.2.3"
+            name: "Immediate feedback"
+            description: "Give feedback immediately after learners submit questions or assignments."
+            references: [8]
+            canvas_application: "Enable auto-grading where possible; set quick turnaround expectations"
+
+          - id: "3.2.4"
+            name: "Worked examples"
+            description: "Offer worked examples, gradually transitioning to partial examples and independent problem-solving."
+            research_basis: "worked examples principle"
+            references: [9, 13]
+            canvas_application: "Provide sample submissions; model solution processes in videos"
+
+          - id: "3.2.5"
+            name: "Clear instructions"
+            description: "Provide clear instructions, rubrics, and detailed expectations for learning activities and assessments."
+            references: [4, 5]
+            canvas_application: "Complete rubrics attached to all assignments; detailed submission guidelines"
+
+      - id: "3.3"
+        name: "Metacognition & Deep Learning"
+        principles:
+          - id: "3.3.1"
+            name: "Self-assessing progress"
+            description: "Assist learners in accurately assessing their learning progress and using this information to plan study time efficiently."
+            references: [4, 5, 13]
+            canvas_application: "Use Canvas learning mastery gradebook; provide progress tracking tools"
+
+          - id: "3.3.2"
+            name: "Generating explanations"
+            description: "Prompt learners to generate explanations that demonstrate higher-order thinking. Ask questions that probe causes, consequences, and evidence such as 'why,' 'how,' and 'what-if?'"
+            references: [3, 4, 13, 20]
+            canvas_application: "Include reflection prompts; require students to explain their reasoning"
+
+          - id: "3.3.3"
+            name: "Reflection"
+            description: "Prompt learners to assess their own learning and reflect on what and how they have learned."
+            references: [5, 20]
+            canvas_application: "Add reflection questions to assignments; end-of-module reflection activities"
+
+          - id: "3.3.4"
+            name: "Social learning"
+            description: "Provide opportunities for learning through interaction and collaboration, such as discussions, group projects, and teamwork."
+            references: [1, 4, 10, 20]
+            canvas_application: "Use peer reviews, group assignments, and discussion forums"
+
+  - id: 4
+    name: "Simple, Intuitive User Experience"
+    description: "Create clean navigation and seamless interfaces that reduce cognitive load, letting learners focus their mental energy on learning rather than figuring out how things work."
+    categories:
+      - id: "4.1"
+        name: "Navigation & Orientation"
+        principles:
+          - id: "4.1.1"
+            name: "Intuitive navigation"
+            description: "Design navigation systems that are intuitive and minimize wasted efforts."
+            references: [4, 5, 19, 20]
+            canvas_application: "Use Canvas's native navigation; consistent module structure"
+
+          - id: "4.1.2"
+            name: "Progress and location indicators"
+            description: "Include a map or progress indicator showing the learner's location within the lesson to aid motivation, time management, and the desire for completeness."
+            references: [4, 10, 16, 20]
+            canvas_application: "Enable module progression; use Canvas's built-in progress tracking"
+
+          - id: "4.1.3"
+            name: "Differentiate static vs. interactive content"
+            description: "Enable learners to easily recognize interactive elements within content to avoid confusion about what is clickable."
+            references: [11]
+            canvas_application: "Use consistent button styles; clearly label links and interactive elements"
+
+          - id: "4.1.4"
+            name: "A 'closed' learning system"
+            description: "Present the learning system as a self-contained, closed environment. Clearly label external links or relegate them to a reference section."
+            references: [4, 19]
+            canvas_application: "Mark external links clearly; keep core learning within Canvas"
+
+          - id: "4.1.5"
+            name: "Resume where you left off"
+            description: "Allow learners to easily find their place when returning to the learning system after time away."
+            references: [11, 19, 20]
+            canvas_application: "Leverage Canvas's automatic progress tracking; clear module naming"
+
+      - id: "4.2"
+        name: "Accessibility & Optimization"
+        principles:
+          - id: "4.2.1"
+            name: "Simple and advanced search"
+            description: "Provide simple and advanced search options for learners to find specific details within lessons."
+            references: [19]
+            canvas_application: "Enable Canvas search; use consistent keywords across content"
+
+          - id: "4.2.2"
+            name: "Note-taking and highlighting"
+            description: "Incorporate tools for learners to take notes, highlight, and annotate lessons."
+            references: [5, 19, 20]
+            canvas_application: "Use Canvas's annotation features for documents"
+
+          - id: "4.2.3"
+            name: "Viewability on different screen sizes"
+            description: "Optimize viewability across different screen sizes and devices, leveraging the benefits of portability and instant availability. Use reflowable text and allow zooming for graphics."
+            references: [5]
+            canvas_application: "Test content on mobile; use responsive embedded content"
+
+          - id: "4.2.4"
+            name: "Customizing display based on preferences"
+            description: "Enable learners to customize text display, including font styles, sizes, and background colors, based on individual preferences."
+            references: [19]
+            canvas_application: "Avoid fixed font sizes in custom HTML; use Canvas's accessibility features"
+
+          - id: "4.2.5"
+            name: "Minimalist design"
+            description: "Prioritize clarity and simplicity in the learning system's UX/UI."
+            references: [1, 11, 14]
+            canvas_application: "Don't clutter course home page; hide unused navigation items"
+
+      - id: "4.3"
+        name: "Media Control & Time"
+        principles:
+          - id: "4.3.1"
+            name: "Controlling the pace of videos"
+            description: "Include video player controls that allow learners to play, replay, speed up, slow down, or skip videos at their own pace."
+            references: [9]
+            canvas_application: "Use Canvas Studio or YouTube embeds with full player controls"
+
+          - id: "4.3.2"
+            name: "Time estimates"
+            description: "Provide lesson time estimates and clear time stamps on video or audio resources."
+            references: [9]
+            canvas_application: "Add estimated completion time to module descriptions; include video durations"
+
+# Reference key (numbered citations from original document)
+references:
+  1: "Albion, 1999 - Heuristic evaluation of educational multimedia"
+  2: "Budiu, 2018 - Direct Access vs. Sequential Access, Nielsen Norman Group"
+  3: "Dunlosky et al., 2013 - Improving Students' Learning With Effective Learning Techniques"
+  4: "Jahnke et al., 2021 - Sociotechnical-Pedagogical Heuristics for online courses"
+  5: "Guiding Principles for Quality Textbooks, 2018"
+  6: "Jurenka et al., 2024 - Towards responsible development of generative AI for education"
+  7: "Kalyuga, 2005 - Prior Knowledge Principle in Multimedia Learning"
+  8: "Koedinger et al., 2013 - Instructional Complexity and the Science to Constrain It"
+  9: "Mayer, 2022 - Multimedia Learning"
+  10: "Mtebe & Kissaka, 2015 - Heuristics for Evaluating Usability of LMS in Africa"
+  11: "Source for UX differentiation principles"
+  12: "Source for progressive disclosure"
+  13: "Source for spaced learning and worked examples"
+  14: "Source for design consistency and simplicity"
+  16: "Source for progress indicators and motivation"
+  17: "Source for feedback principles"
+  19: "Source for navigation and search principles"
+  20: "Source for comprehensive instructional design"
